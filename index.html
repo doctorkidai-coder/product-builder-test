@@ -1,14 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>로또 번호 추천기</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+<body class="light-mode">
+  <div class="container">
+    <header>
+      <h1>로또 번호 추천</h1>
+      <button id="theme-toggle" class="btn-theme">다크 모드</button>
+    </header>
+    
+    <main>
+      <div id="lotto-numbers" class="number-container">
+        <div class="ball">?</div>
+        <div class="ball">?</div>
+        <div class="ball">?</div>
+        <div class="ball">?</div>
+        <div class="ball">?</div>
+        <div class="ball">?</div>
+      </div>
+      
+      <button id="generate-btn" class="btn-generate">번호 생성하기</button>
+    </main>
+  </div>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
